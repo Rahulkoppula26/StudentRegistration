@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    
+    
+}
+/* background and view height and width */
+body {
+    background-image: url("images/bg_img_1.avif");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    height: 100vh;
+    width: 100vw;
+}
+.section1 {
+    position: relative;
+    top: 10%;
+}
+/* css for title  */
+.heading {
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to right,#ed6d05 30%,#14f14f);
+    background-clip: padding-box;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+/* styling the form for better readability */
+.form {
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 35%;
+   
+}
+form {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+    border-radius: 20px;
+}
+label {
+    font-size: 18px;
+    letter-spacing: 1px;
+    background-color:transparent;
+    font-weight: 800;
+    margin: .5rem;
+}
+input {
+    margin-top: 10px;
+    width: 80%;
+    height: 2rem;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: medium;
+    text-align: center;
+    color: black;
+    background-color:rgb(13, 180, 221);
+    border: 2px solid black;
+}
+/* styling the add button for interactiveness to user */
+.add-button {
+    margin-top: 1rem;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding:2px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(1, 0, 0);
+    background-color:rgb(64, 191, 220);
+    cursor: pointer;
+
+}
+.add-button:hover {
+    background-color: rgb(0, 242, 255);
+    box-shadow: 0px 0px 10px rgb(0, 234, 255),0px 0px 20px rgb(0, 234, 255),0px 0px 30px rgb(0, 234, 255),0px 0px 30px rgb(0, 234, 255);
+
+}
+/* creating a table stucture to organizing details*/
+.details {
+    border: 2px white solid;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 40%;
+    height: 5rem;
+    width: 90%;
+}
+.box-shape {
+    border: 2px white solid;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 5rem;
+    width: 100%;
+}
+
+.name {
+    margin:2rem 0.7rem;
+}
+.id {
+    margin:2rem 0.7rem;
+
+}
+.email {
+    margin:2rem 0.7rem;
+
+}
+.contact {
+    margin:2rem 0.7rem;
+
+}
+/* styling delete button */
+.trash {
+    height: 30px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 15px;
+    position: relative;
+    top: 30%;
+    background-color: rgb(0, 229, 255);
+    padding: 0 8px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+/* styling edit button */
+.edit {
+    height: 30px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 15px;
+    position: relative;
+    top: 30%;
+    background-color: rgb(0, 229, 255);
+    padding: 0 8px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: 2px solid rgb(0, 0, 0);
+
+}
+/* creating scroll bar for thr student data */
+.studentDetails {
+    position: relative;
+    top: 45%;
+    width: 90%;
+    height: 350px;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="rahulkoppula" >
+    <meta name="keywords" content="HTML, CSS, JavaScript, student, data, Registration form, studentDetails">
+    <meta name="description" content="This page is about the records of studentd data">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src=".\index.js" defer></script>
+</head>
+<body>
+    <!-- Title name for page -->
+    <section class="section1">
+        <h1 class="heading">Student Registration Form</h1>
+    </section>
+    <section>
+        <div class="container">
+            <!--  Form to take input from user -->
+            <div class="form">
+                <form action="">
+                    <label for="stu_name">Student Name</label>
+                    <input  type="text" class="stuname" name="student_name" id="stu_name" >
+                    <label for="stu_id">Student ID</label>
+                    <input type="number" class="stuid" name="student_ID" id="stu_id" >
+                    <label for="emailid">Email ID</label>
+                    <input type="email" id="emailid" name="Email" class="email-id" >
+                    <label for="contact">Contact No.</label>
+                    <input type="number" class="contact-no"  name="Contact_No" id="contact" >
+                    <button type="button" class="add-button" value="submit" >Add</button>
+                </form>
+            </div>
+            <!-- Table to display all the details entered by users -->
+            <div class="data">
+                <div class="details">
+                    <h3 class="name" > Name</h3>
+                    <h3 class="id" >ID</h3>
+                    <h3 class="email" >Email ID</h3>
+                    <h3 class="contact" >Contact No.</h3>
+                </div>
+                <!--div tag to save the records of students -->
+                <div class="studentDetails"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
